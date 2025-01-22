@@ -1,11 +1,9 @@
 // components/Button.tsx
 import React from "react";
+import { ButtonProps } from '../shared/common.interfaces';
 import "./button.styles.css";
 
-interface ButtonProps {
-  label: string;
-  variant?: 'primary' | 'secondary' | 'warn';
-}
+
 
 const Button: React.FC<ButtonProps> = ({ label, variant = 'primary' }) => {
   return (

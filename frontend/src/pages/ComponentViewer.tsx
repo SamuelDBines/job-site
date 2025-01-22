@@ -6,10 +6,12 @@ const ComponentViewer: React.FC = () => {
   const components = getComponents();
   const [selectedComponentIndex, setSelectedComponentIndex] = useState<number | null>(null);
 
-  const [selectedVariant, setSelectedVariant] = useState<string>('primary');
-
   const selectedComponent =
     selectedComponentIndex !== null ? components[selectedComponentIndex] : null;
+
+  const [selectedVariant, setSelectedVariant] = useState<string>(selectedComponent?.variants?.[0] || 'primary');
+
+
 
   const getVariant = React.useMemo(() => selectedVariant, [selectedVariant]);
 
@@ -47,9 +49,9 @@ const ComponentViewer: React.FC = () => {
             </div>
             <div className="flex">
               {selectedComponent?.variants?.length && selectedComponent.variants.map((v: string) => {
-                return <>
-                  <input type="radio" name="variant" />{v}
-                </>;
+                return <div className="flex">
+                  <input value={selectedVariant} type="radio" name="variant" className="m-xs" onClick={() => setSelectedVariant(v)} /><p className="m-xs">{v}</p>
+                </div>;
               })}
             </div>
           </>

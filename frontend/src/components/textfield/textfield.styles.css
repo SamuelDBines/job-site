@@ -1,4 +1,4 @@
-.button {
+input[text] {
   cursor: pointer;
   border: none;
   padding: var(--p-xs);
@@ -6,11 +6,11 @@
   color: var(--tx-light);
 }
 
-.button.primary  {
+input.primary  {
   background-color: var(--primary); 
 }
 
-.button.primary:hover {
+/* .button.primary:hover {
   background-color: var(--primary-light);
 }
 
@@ -36,4 +36,4 @@
 .button.warn:hover {
   background-color: var(--warn);
   color: var(--tx-dark);
-}
+} */

@@ -43,12 +43,60 @@
   /* Color palette */
   --primary: #23374D;
   --primary-light: #1089FF;
+  --secondary-dark: #C1BAA1;
   --secondary: #E5E5E5;
   --secondary-light: #EEEEEE;
+  --warn: #FF2929;
+  --warn-light: #FF4545;
+  --disabled: #A59D84;
 
   /* Text Color */
   --tx-light: white;
   --tx-dark: black;
+}
+
+.m-xxs {
+  margin: var(--m-xxs);
+}
+.m-xs {
+  margin: var(--m-xs);
+}
+.m-sm {
+  margin: var(--m-sm);
+}
+.m-md {
+  margin: var(--m-md);
+}
+.m-lg {
+  margin: var(--m-lg);
+}
+.m-xl {
+  margin: var(--m-xl);
+}
+.m-xxl {
+  margin: var(--m-xxl);
+}
+
+.p-xxs {
+  padding: var(--p-xxs);
+}
+.p-xs {
+  padding: var(--p-xs);
+}
+.p-sm {
+  padding: var(--p-sm);
+}
+.p-md {
+  padding: var(--p-md);
+}
+.p-lg {
+  padding: var(--p-lg);
+}
+.p-xl {
+  padding: var(--p-xl);
+}
+.p-xxl {
+  padding: var(--p-xxl);
 }
 
 
