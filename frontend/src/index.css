@@ -1,0 +1,41 @@
+:root {
+  font-family: "Roboto", serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-style: normal;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  /* Padding */
+  --p-xxs: 0.25rem;
+  --p-xs: 0.5rem;
+  --p-sm: 0.75rem;
+  --p-md: 1rem;
+  --p-lg: 1.5rem;
+  --p-xl: 2rem;
+  --p-xxl: 3rem;
+
+  /* Margin */
+  --m-xxs: 0.25rem;
+  --m-xs: 0.5rem;
+  --m-sm: 0.75rem;
+  --m-md: 1rem;
+  --m-lg: 1.5rem;
+  --m-xl: 2rem;
+  --m-xxl: 3rem;
+
+  /* Color palette */
+
+  --primary: #23374D;
+  --primary-light: #1089FF;
+  --secondary: #E5E5E5;
+  --secondary-light: #EEEEEE;
+  
+}
