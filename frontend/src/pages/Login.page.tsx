@@ -1,9 +1,18 @@
 import React, { useState } from "react";
-
+import { useModal } from "../components/Modal/modal.component";
 import "./Login.styles.css";
 import { loginUser } from "../services/auth.service";
 
+const TestModal = () => {
+  return (<>
+    <h1> Some header</h1>
+  </>
+  );
+};
+
 const Login: React.FC = () => {
+  const { toggleModal, component } = useModal({ children: <TestModal /> });
+  const { toggleModal: tg, component: cp } = useModal({ children: <TestModal /> });
   const [username, setUsername] = useState<string>("");
   const [password, setPassword] = useState<string>("");
 
@@ -21,7 +30,12 @@ const Login: React.FC = () => {
 
   return (
     <div className="login-container">
-      <h1>Login</h1>
+      <h1 onClick={() => {
+        toggleModal();
+        tg();
+      }}>Login</h1>
+      {component}
+      {cp}
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="email">Email</label>

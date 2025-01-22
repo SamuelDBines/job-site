@@ -1,6 +1,6 @@
 import { registerComponent } from "../services/component-registry.service";
 import Button from "./Button/button.component";
-import Textfield from "./textfield/textfield.component";
+import Textfield from "./Textfield/textfield.component";
 
 registerComponent({
   name: "Button",
