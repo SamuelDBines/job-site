@@ -1,7 +1,9 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Login from "./pages/Login.page";
 import Dashboard from "./pages/Dashboard.page";
+import ComponentViewer from "./pages/ComponentViewer";
+import './components/component.registry';
 // import reactLogo from './assets/react.svg';
 // import viteLogo from '/vite.svg';
 import './App.css';
@@ -12,6 +14,7 @@ function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/" element={<ComponentViewer />} />
         {/* Login Route */}
         <Route path="/login" element={<Login />} />
 

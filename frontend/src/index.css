@@ -5,7 +5,8 @@
   font-style: normal;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  /* color: rgba(255, 255, 255, 0.87); */
+  color: black;
   background-color: #242424;
 
   font-synthesis: none;
@@ -31,11 +32,23 @@
   --m-xl: 2rem;
   --m-xxl: 3rem;
 
-  /* Color palette */
+  /* Border radius */
+  --br-xxs: 0.25rem;
+  --br-xs: 0.5rem;
+  --br-md: 0.75;
+  --br-lg: 1rem;
+  --br-xl: 1.5rem;
+  --br-xxl: 2rem;
 
+  /* Color palette */
   --primary: #23374D;
   --primary-light: #1089FF;
   --secondary: #E5E5E5;
   --secondary-light: #EEEEEE;
-  
+
+  /* Text Color */
+  --tx-light: white;
+  --tx-dark: black;
 }
+
+

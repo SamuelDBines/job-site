@@ -1,0 +1,25 @@
+.button {
+  cursor: pointer;
+  border: none;
+  padding: var(--p-xs);
+  border-radius: var(--br-xxs);
+  color: var(--tx-light);
+}
+
+.button.primary  {
+  background-color: var(--primary); 
+}
+
+.button.primary:hover {
+  background-color: var(--primary-light);
+}
+
+.button.secondary {
+  background-color: var(--secondary);
+  color: var(--tx-dark);
+}
+
+.button.secondary:hover {
+  background-color: var(--secondary-light);
+  color: var(--tx-dark);
+}
