@@ -1,8 +1,9 @@
 from django.urls import path
-from . import views
+from .views import JobListView, JobCreateView, JobApplicationListView, JobApplicationCreateView
 
 urlpatterns = [
-    # path("jobs/", views.JobListView.as_view(), name="job_list"),
-    # path("jobs/<int:pk>/", views.JobDetailView.as_view(), name="job_detail"),
-    # path("jobs/<int:pk>/apply/", views.ApplyToJobView.as_view(), name="apply_to_job"),
+    path("jobs/", JobListView.as_view(), name="job-list"),
+    path("jobs/create/", JobCreateView.as_view(), name="job-create"),
+    path("applications/", JobApplicationListView.as_view(), name="application-list"),
+    path("applications/create/", JobApplicationCreateView.as_view(), name="application-create"),
 ]
